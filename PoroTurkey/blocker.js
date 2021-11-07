@@ -1,28 +1,3 @@
-import timer from "./timer.js"
-
-switch (window.location.hostname) {
-  case "www.t.com":
-    document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("Youtube");
-    break;
-  case "www.facebook.com":
-    document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("Facebook");
-    break;
-  case "www.reddit.com":
-    document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("Reddit");
-    break;
-  case "discord.com":
-    document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("Discord");
-    break;
-  case "www.instagram.com":
-    document.head.innerHTML = generateSTYLES();
-    document.body.innerHTML = generateHTML("Instagram");
-    break;
-}
-
 const generateSTYLES = () => {
   return `<style>@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
   body {
@@ -55,3 +30,26 @@ const generateHTML = (pageName) => {
     </div>  
     `;
   };
+
+  switch (window.location.hostname) {
+    case "www.youtube.com":
+      document.head.innerHTML = generateSTYLES();
+      document.body.innerHTML = generateHTML("Youtube");
+      break;
+    case "www.facebook.com":
+      document.head.innerHTML = generateSTYLES();
+      document.body.innerHTML = generateHTML("Facebook");
+      break;
+    case "www.reddit.com":
+      document.head.innerHTML = generateSTYLES();
+      document.body.innerHTML = generateHTML("Reddit");
+      break;
+    case "discord.com":
+      document.head.innerHTML = generateSTYLES();
+      document.body.innerHTML = generateHTML("Discord");
+      break;
+    case "www.instagram.com":
+      document.head.innerHTML = generateSTYLES();
+      document.body.innerHTML = generateHTML("Instagram");
+      break;
+  }
