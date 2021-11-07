@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PomoTurkey</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+<head>
+  <title>PomoTurkey</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <div class="header">
-        <img class="logo-icon" src="images/pomo-logo.png">
-        <h1>PomoTurkey</h1>
+  <div class="header">
+    <img class="logo-icon" src="images/pomo-logo.png">
+    <h1>PomoTurkey</h1>
+  </div>
+
+  <div class="timer"></div>
+  <div class="blockedSitesManager">
+    <div class="bsm-header">
+      <div>Manage Sites To Block</div>
+      <button id="bsm-addButton">Add</button>
+      <button id="bsm-clearButton">Clear All</button>
     </div>
+    <div class="bsm-siteRow"></div>
+  </div>
+  <script src="dist/timer.js"></script>
+  <script src="dist/blocked_sites_manager.js"></script>
+</body>
 
-    <div class="timer">
-      <span class ="ui">
-        <span class ="clock">
-          <span class="timer__part timer__part--minutes">25</span>
-          <span class="timer__part">:</span>
-          <span class="timer__part timer__part--seconds">00</span>
-        </span>
-        <span class="buttons">
-          <button type="button" class="timer__btn timer__btn--control timer__btn--start">
-              <span class="material-icons">play_arrow</span>
-          </button>
-          <button type="button" class="timer__btn timer__btn--reset">
-              <span class="material-icons">timer</span>
-          </button>
-        </span>
-      </span>
-    </div>
-    <script src="timer.js"></script>
-
-  </body>
 </html>
