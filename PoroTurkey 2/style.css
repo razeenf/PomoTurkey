@@ -1,0 +1,64 @@
+* {
+	margin: 2px 5px 2px 5px;
+}
+
+body {
+	background: #98d1dd;
+	font-family: "Dongle", sans-serif;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1.3px;
+	font-size: 30px;
+}
+
+.logo-icon {
+	margin-right: 12px;
+}
+
+.timer {
+	display: flex;
+	justify-content: center;
+	padding: 5px 0px 25px 0px;
+	border-radius: 20px;
+	background: #bed4d8;
+	margin: 2px 20px 35px 20px;
+}
+
+.ui {
+	display: grid;
+}
+
+.timer__part {
+	padding-left: 3px;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+.timer__btn {
+	width: 60px;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: none;
+	margin-top: -10px;
+	color: white;
+	background: #6ba2f3;
+	cursor: pointer;
+}
+
+.timer__btn--start {
+	background: #52be7f;
+}
+
+.timer__btn--stop {
+	background: #fd6666;
+}
+
+/* Blocked Sites Manager UI */
+.bsm-header {
+	display: flex;
+	flex-direction: row;
+}
