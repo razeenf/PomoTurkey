@@ -1,12 +1,16 @@
 * {
+	margin: 2px 5px 2px 5px;
+}
+
+body {
 	background: #98d1dd;
 	font-family: "Dongle", sans-serif;
-	margin: 2px 10px 2px 10px;
 }
 
 .header {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	letter-spacing: 1.3px;
 	font-size: 30px;
 }
@@ -16,33 +20,39 @@
 }
 
 .timer {
-	font-family: sans-serif;
-	display: inline-block;
-	padding: 24px 32px;
-	border-radius: 30px;
-	background: white;
+	display: flex;
+	justify-content: center;
+	padding: 5px 0px 25px 0px;
+	border-radius: 20px;
+	background: #bed4d8;
+	margin: 2px 20px 35px 20px;
+}
+
+.ui {
+	display: grid;
 }
 
 .timer__part {
-	font-size: 36px;
+	padding-left: 3px;
+	font-size: 60px;
 	font-weight: bold;
 }
 
 .timer__btn {
-	width: 50px;
-	height: 50px;
-	margin-left: 16px;
-	border-radius: 50%;
+	width: 60px;
+	height: 30px;
+	border-radius: 5px 5px 5px 5px;
 	border: none;
+	margin-top: -10px;
 	color: white;
-	background: #8208e6;
+	background: #6ba2f3;
 	cursor: pointer;
 }
 
 .timer__btn--start {
-	background: #00b84c;
+	background: #52be7f;
 }
 
 .timer__btn--stop {
-	background: #ff0256;
+	background: #fd6666;
 }
