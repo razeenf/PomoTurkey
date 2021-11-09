@@ -60,9 +60,41 @@ body {
 /* Blocked Sites Manager UI */
 .bsm-header {
 	display: flex;
-	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	font-weight: bold;
 }
 
-#jokeElement{
+.bsm-header button {
+	border: none;
+	background: rgb(255, 255, 135);
+	border-radius: 5px 5px 5px 5px;
+	cursor: pointer;
+	height: 25px;
+}
+
+.blockedSitesManager {
+	display: grid;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.bsm-siteRow {
+	font-size: 11px;
+	font-family: sans-serif;
+	margin-left: 6px;
+}
+
+#jokeElement {
 	font-size: x-large;
+}
+
+#dj-btn {
+	margin-left: 35%;
+	margin-top: 10px;
+	height: 22px;
+	border: none;
+	background: rgb(255, 255, 135);
+	border-radius: 4px 4px 4px 4px;
 }
